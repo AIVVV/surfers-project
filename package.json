@@ -1,0 +1,41 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "My Web workflow with NPM, SASS, GULP and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AIVVV/workflow.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Git",
+    "Gulp"
+  ],
+  "author": "Angel Ivanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AIVVV/workflow/issues"
+  },
+  "homepage": "https://github.com/AIVVV/workflow#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-inject-partials": "^1.0.3",
+    "gulp-newer": "^1.3.0",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "merge-stream": "^1.0.1",
+    "mustache": "^2.3.0"
+  }
+}
