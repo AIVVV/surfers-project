@@ -13,11 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom css styling -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <!-- font awesome favicons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- jQuery library -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap Latest compiled and minified JavaScript -->
@@ -27,43 +24,109 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-default">
-                <div class="col-md-2 col-sm-2">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav" aria-expanded="false">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Surfers Co</a>
+    <!-- header-section -->
+    <header class="header-section">
+        <!-- social mobile navigation -->
+        <ul class="nav navbar-nav mobile-social-nav">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+        <!-- main-navigation -->
+        <nav class="navbar navbar-default navbar-static-top main-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navbar-button" data-toggle="collapse" data-target="#top-main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand surfers-logo" href="#">Surfers Co.</a>
+                </div>
+                <div class="collapse navbar-collapse" id="top-main-nav">
+                    <ul class="nav navbar-nav middle-nav">
+                        <li><a href="#">Boards</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Dealers</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right right-nav">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- slogan section -->
+    <section class="slogan-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline-container">
+                        <h1 class="header-title">Ride every wave as if it's your last</h1>
+                        <h2 class="header-subtitle">We love the motion of the ocean</h2>
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-8">
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="top-nav">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Boards</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Dealers</a></li>
+            </div>
+        </div>
+    </section>
+    <!-- surfboards-section -->
+    <section class="surfboards-section">
+        <div class="container">
+            <div class="row surfboard-container">
+                <div class="col-md-5 col-sm-5 col-md-offset-1 col-sm-offset-1">
+                    <div class="surf-carousel-wrapper clearfix">
+                        <div class="carousel-container">
+                            <img id="" src="img/surfboards_section_img/carousel-img.png" alt="">
+                        </div>
+                        <ul class="carousel-nav">
+                            <li class="thumb-item">
+                                <img src="img/surfboards_section_img/thumb-1.png" alt="">
+                            </li>
+                            <li class="thumb-item">
+                                <img src="img/surfboards_section_img/thumb-2.png" alt="">
+                            </li>
+                            <li class="thumb-item">
+                                <img src="img/surfboards_section_img/thumb-3.png" alt="">
+                            </li>
+                            <li class="thumb-item">
+                                <img src="img/surfboards_section_img/thumb-4.png" alt="">
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-2">
-                    <ul class="nav navbar-nav social-nav">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
+                <div class="col-md-5 col-sm-5">
+                    <div class="surf-text-wrapper">
+                        <h1 class="headline">JR Surfboards The Donny Stoker<br>Yellow/Green Rail Fade</h1>
+                        <div class="page-scroll clearfix">
+                            <img class="prev" src="img/surfboards_section_img/prev.png" alt="">
+                            <img class="next" src="img/surfboards_section_img/next.png" alt="">
+                        </div>
+                        <img class="rating" src="img/surfboards_section_img/rating.png" alt="">
+                        <span class="page-counter">05/25</span>
+                        <ul class="content-nav clearfix">
+                            <li class="active">Description</li>
+                            <li>Features</li>
+                            <li>Dimensions</li>
+                        </ul>
+                        <div class="content-container">
+                            <p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                        </div>
+                        <div class="shop-container">
+                            <span class="price">$499.99</span>
+                            <button class="buy-now" type="">Buy Nowt</button>
+                        </div>
+                        <span class="view-all">View all boards</span>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

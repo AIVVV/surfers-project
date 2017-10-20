@@ -1,0 +1,47 @@
+// colors
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$sky-blue: #00d2ff;
+$dirty-yellow: #f2d800;
+$shadow-grey: #797979;
+$light-grey: #d9d9d9;
+$darcker-grey: #a0a0a0;
+$transparent: transparent;
+
+//surfers logo
+$logo-color: $black;
+
+// main menu middle nav
+$main-menu-background-color: $transparent;
+$main-menu-border-color: $transparent;
+$main-menu-anchor-color: $black;
+$main-menu-anchor-background-color-hover: $sky-blue;
+$main-menu-anchor-color-hover: $white;
+
+// main menu right nav
+$main-menu-right-nav-background-color: $black;
+$main-menu-right-nav-color: $white;
+
+// mobile nav button 
+$mobile-nav-button-color: $black;
+$mobile-nav-button-color-hover: $white;
+$mobile-nav-button-background-hover: $sky-blue;
+
+//surfers section 
+$surfers-section-background: $white;
+$carousel-nav-border-color: $grey;
+$carousel-nav-border-color-hover: $sky-blue;
+$headline-color: $black;
+$page-scroll-background: $dirty-yellow;
+$page-counter-background: $black;
+$page-counter-color: $white;
+$content-nav-border: $sky-blue;
+
+
+// Bootstrap responsive breakpoints
+$breakpoints: ( 
+	tablet: 767px,
+	mediumDesktop: 992px,
+	largeDesktop: 1200px
+);

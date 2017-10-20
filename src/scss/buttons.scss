@@ -1,0 +1,25 @@
+// navigation mobile button
+.navbar-button {
+    border-color: $transparent !important;
+    background-color: $transparent;
+    @include border-radius(0px);
+    transition: 0.2s all;
+    &:hover {
+        background-color: $mobile-nav-button-background-hover !important;
+        .icon-bar {
+            background-color: $mobile-nav-button-color-hover !important;
+        }
+    }
+    &:focus {
+        background-color: $mobile-nav-button-background-hover !important;
+    }
+    .icon-bar {
+        background-color: $mobile-nav-button-color !important;
+        transition: 0.2s all;
+    }
+}
+
+.navbar-collapse {
+    border-color: $transparent !important;
+    box-shadow: none !important;
+}

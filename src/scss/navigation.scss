@@ -1,0 +1,132 @@
+.main-nav {
+    background: $main-menu-background-color;
+    border-color: $main-menu-border-color;
+    margin-bottom: 0px;
+    height: 50px;
+
+    .surfers-logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.8em;
+        color: $logo-color;
+
+        &:hover {
+            color: $logo-color;
+        }
+    }
+
+    .middle-nav {
+        padding-left: 120px;
+        @include largeDesktop {
+            padding-left: 25px;
+        }
+        @include mediumDesktop {
+            padding-left: 0px;
+        }
+        li {
+            margin-top: 12px;
+            margin-left: 25px;
+            &:first-child {
+                margin-left: 0;
+            }
+            @include mediumDesktop {
+                margin-left: 2.5px;
+            }
+            @include tablet {
+                margin: 0;
+            }
+
+            a {
+                color: $main-menu-anchor-color;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1.0em;
+                padding: 2.5px 5px;
+                &:hover {
+                    transition: 0.5s all;
+                    color: $main-menu-anchor-color-hover;
+                    background-color: $main-menu-anchor-background-color-hover;
+                }
+                @include mediumDesktop {
+                    font-size: 0.9em;
+                }
+                @include tablet {
+                    display: block;
+                    height: 50px;
+                    text-align: center;
+                    padding: 15px 5px;
+                }
+            }
+        }
+    }
+
+    .right-nav {
+        margin-right: 0px;
+        @include tablet {
+            display: none;
+        }
+        li {
+            width: 35px;
+            height: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: $main-menu-right-nav-background-color;
+            @include border-radius(50%);
+            position: relative;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                color: $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                &:hover {
+                    color: $white;
+                }
+            }
+            @include mediumDesktop {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.mobile-social-nav {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 38px;
+    z-index: 1001;
+    li {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: $main-menu-right-nav-background-color;
+        @include border-radius(50%);
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+        @include tablet {
+            margin-left: 0;
+        }
+        a {
+            color: $white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &:hover {
+                color: $white;
+                background-color: $transparent;
+            }
+        }
+    }
+    @include tablet {
+        display: block;
+    }
+}
